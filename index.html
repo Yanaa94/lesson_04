@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УРОК 4 form</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Some user info</legend>
+        <h2>User info</h2>
+        <!--div - это блочный элемент, т.е. все, что в теге "див" будет занимать всю ширину строки-->
+        <div>
+            <input type="text" placeholder="Input your name">
+            <!--вместо placeholder можно ввести тег label и надпись будет не внутри поля ввода, а перед ним, пример ниже-->
+            <br>
+            <br>
+            <label>Введите имя</label>
+            <input type="text">
+            <br>
+            <br>
+        <!--можно сделать связку label и input, чтобы при нажатии на слово "введите имя" курсор автоматически высвечивался на полеввода имени. Пример ниже-->
+            <br>
+            <br>
+            <label for="UserName">Введите имя</label>
+            <input id="UserName" type="text">
+
+                    <!--А лучше сразу указывать такую структуру, чтобы не нужно было писать for and id. Пример ниже-->
+                    <br>
+                    <br>
+                    <label>Введите имя<input type="text"></label>
+                    <br>
+                    <br>
+                    <input type="number">
+                    <br>
+            <br>
+            <!--вводим максимальное и минимальное значение, которое можно ввести и шаг "прокрутки" стрелочками сбоку строки-->
+            <input type="number" max="50" min="10" step="2">
+        </div>
+
+        <br>
+        <!--textarea - тег для широкого и объемного текста, комментария к примеру-->
+    <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vero consectetur ab praesentium veniam quis facere. Aut nisi voluptates reprehenderit quibusdam voluptate rerum, sit incidunt? Quas impedit earum inventore ab?</textarea>
+
+    </fieldset>
+
+    <input type="submit">
+
+</form>
+    
+</body>
+</html>

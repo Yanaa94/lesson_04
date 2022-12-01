@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Урок, чтобы не переполнять таблицу</title>
+</head>
+<body>
+    
+    <!-- 2 структуры, чтобы при нажатии на слово "Запомнить меня" спазу нажималась галочка-->
+    <input type="checkbox" id="check1"> <label for="check1">Запомнить меня</label>
+    <label><input type="checkbox">Запомнить меня</label>
+
+
+    <!-- переключатель между предложенными вариантами. Status - это не системное слово, это описание списка выбора, которое мы сами придумываем. Типо новобрачные, семьянины, работники и т.д.-->
+
+    <h4>Семейное положение</h4>
+    <label><input type="radio" name="status">Холост</label>
+    <label><input type="radio" name="status">Женат</label>
+    <label><input type="radio" name="status">Разведен</label>
+    <label><input type="radio" name="status">Вдовец</label>
+
+    <!-- если написать слово status1-то это будет уже другой список-->
+
+    <br>
+    <br>
+
+
+    <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+
+    <br>
+    <br>
+<!--fieldset - это тег для обводки формы-->
+
+<fieldset>
+    <legend>Контактная информация</legend>
+    <div><label for="name">Имя<em>*</em></label><input type="text" id="name"></div>
+    <div><label for="email">E-mail</label><input type="email" id="email"></div>
+</fieldset>
+
+<!-- ВСЕ инпуты-->
+<input type="button"><br>
+<input type="checkbox"><br>
+<input type="color"><br>
+<input type="date"><br>
+<input type="datetime-local"><br>
+<input type="email"><br>
+<input type="file"><br>
+<input type="hidden"><br> <!--скрыто от пользователя, но поле существует-->
+<input type="image"><br>
+<input type="month"><br>
+<input type="number"><br>
+<input type="password"><br>
+<input type="radio"><br>
+<input type="range"><br>
+<input type="reset"><br>
+<input type="search"><br>
+<input type="submit"><br>
+<input type="tel"><br>
+<input type="text"><br>
+<input type="time"><br>
+<input type="url"><br>
+<input type="week"><br>
+<!-- КОНЕЦ -->
+
+
+</body>
+</html>
